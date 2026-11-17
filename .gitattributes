@@ -1,0 +1,12 @@
+# 统一换行符为 LF(跨平台协作;Windows 本地检出时 git 自动转为 CRLF)
+* text=auto eol=lf
+
+# 脚本类文件保持 LF,且确保 git 标记可执行(对 npm bin 无实际影响,纯保险)
+*.js text eol=lf
+*.md text
+*.json text
+*.ps1 text
+*.yml text
+*.yaml text
+.gitignore text
+.gitattributes text
