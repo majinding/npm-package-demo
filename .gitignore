@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# 构建产物(若改用 tsc 构建则提交 dist;纯 JS 项目 dist 为空目录,可忽略)
+dist/
+
+# teampkg install 在目标目录生成的产物
+teampkg.config.json
+sample.md
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 本地私有配置(如 CI 缓存、密钥等)
+.env
+.env.*

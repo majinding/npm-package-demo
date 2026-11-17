@@ -1,0 +1,41 @@
+{
+  "name": "@majinding/teampkg",
+  "version": "0.1.0",
+  "description": "npm 包演示:执行 teampkg install 进行交互式安装",
+  "type": "module",
+  "bin": {
+    "teampkg": "./bin/teampkg.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/install.test.js",
+    "prepublishOnly": "node --test test/install.test.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "install",
+    "demo"
+  ],
+  "author": "majinding",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majinding/npm-package-demo.git"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
